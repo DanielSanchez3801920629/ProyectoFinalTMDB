@@ -4,13 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.tmdbproyectofinal.R;
-
-public class LatestMovies extends AppCompatActivity {
+public class NowPlayingMovies extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_latest_movies);
+        setContentView(R.layout.activity_now_playing_movies);
     }
 }
