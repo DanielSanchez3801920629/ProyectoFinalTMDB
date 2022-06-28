@@ -2,8 +2,10 @@ package com.example.tmdbproyectofinal.MoviesMenus;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -26,6 +28,15 @@ public class PopularMovies extends AppCompatActivity  {
         setContentView(R.layout.activity_popular_movies);
         listview = findViewById(R.id.lstViewPopularMov);
         getPopularMoviesList();
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
+                Intent intent = new Intent(PopularMovies.this, IndividualMovie.class);
+                intent.putExtra("id", moviesFromList.getMovieList().get(position).getIdMovie());
+                startActivity(intent);
+
+            }
+        });;
     }
 
     private void getPopularMoviesList() {

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tv_back"
+    tools:context=".TvMenus.IndividualSeries">
+
+    <ImageView
+        android:id="@+id/imgSeriesIndividual"
+        android:layout_width="154dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtSeriesOverviewInd"
+        android:layout_width="356dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Descripción"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeriesNumSeasons"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <TextView
+        android:id="@+id/txtSeriesNumSeasons"
+        android:layout_width="354dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:background="#601212"
+        android:fontFamily="@font/audiowide"
+        android:text="Temporadas"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeriesFirstInd" />
+
+    <TextView
+        android:id="@+id/txtSeriesNameInd"
+        android:layout_width="329dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Nombre"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSeriesIndividual" />
+
+    <TextView
+        android:id="@+id/txtSeriesFirstInd"
+        android:layout_width="254dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Fecha"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeriesNameInd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

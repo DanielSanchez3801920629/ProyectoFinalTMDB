@@ -16,7 +16,25 @@
         android:theme="@style/Theme.TMDBProyectoFinal"
         tools:targetApi="31">
         <activity
-            android:name=".IndividualMovie"
+            android:name=".TvMenus.EpisodeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".TvMenus.SeriesEpisodes"
+            android:exported="false" />
+        <activity
+            android:name=".TvMenus.SeriesSeasons"
+            android:exported="false" />
+        <activity
+            android:name=".TvMenus.IndividualSeries"
+            android:exported="false" />
+        <activity
+            android:name=".MoviesMenus.RelatedMovies"
+            android:exported="false" />
+        <activity
+            android:name=".MoviesMenus.IndividualMovie"
+            android:exported="false" />
+        <activity
+            android:name=".MoviesMenus.NowPlayingMovies"
             android:exported="false" />
         <activity
             android:name=".TvMenus.OnTheAirTv"
@@ -35,9 +53,6 @@
             android:exported="false" />
         <activity
             android:name=".MoviesMenus.TopRatedMovies"
-            android:exported="false" />
-        <activity
-            android:name=".MoviesMenus.LatestMovies"
             android:exported="false" />
         <activity
             android:name=".MoviesMenus.PopularMovies"

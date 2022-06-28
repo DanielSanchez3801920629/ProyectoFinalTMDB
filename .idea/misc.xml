@@ -3,18 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_individual_movie.xml" value="0.2318840579710145" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_episode_details.xml" value="0.3625" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_individual_movie.xml" value="0.25" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_individual_series.xml" value="0.33" />
         <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_latest_movies.xml" value="0.3625" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_latest_tv.xml" value="0.3625" />
         <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_movies_main_menu.xml" value="0.23143115942028986" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_movies_main_menu.xml" value="0.33" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_now_playing_movies.xml" value="0.3625" />
         <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_on_the_air_tv.xml" value="0.3625" />
         <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_popular_movies.xml" value="0.3625" />
         <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_popular_tv.xml" value="0.3625" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_related_movies.xml" value="0.24048913043478262" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_series_episodes.xml" value="0.3070652173913043" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_series_seasons.xml" value="0.3070652173913043" />
         <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_top_rated_movies.xml" value="0.3625" />
         <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_top_rated_tv.xml" value="0.3625" />
         <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_tv_main_menu.xml" value="0.3625" />
         <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/activity_upcoming_movies.xml" value="0.3625" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/item_episodes.xml" value="0.3614583333333333" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/item_episodes_list.xml" value="0.3614583333333333" />
         <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/item_movie.xml" value="0.33" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/item_seasons.xml" value="0.3625" />
+        <entry key="..\:/AndroidProjectsTwo/TMDBProyectoFinal/app/src/main/res/layout/item_tv.xml" value="0.3625" />
       </map>
     </option>
   </component>

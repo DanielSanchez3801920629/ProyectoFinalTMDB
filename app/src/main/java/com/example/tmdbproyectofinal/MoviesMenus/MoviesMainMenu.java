@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.tmdbproyectofinal.MainActivity;
 import com.example.tmdbproyectofinal.R;
 
 public class MoviesMainMenu extends AppCompatActivity implements View.OnClickListener {
@@ -46,7 +45,7 @@ public class MoviesMainMenu extends AppCompatActivity implements View.OnClickLis
     }
 
     private void goToLatestMovies() {
-        Intent intent = new Intent(MoviesMainMenu.this, LatestMovies.class);
+        Intent intent = new Intent(MoviesMainMenu.this, NowPlayingMovies.class);
         startActivity(intent);
     }
 

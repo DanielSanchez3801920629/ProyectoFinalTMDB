@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -18,40 +16,34 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class UpcomingMovies extends AppCompatActivity {
+public class RelatedMovies extends AppCompatActivity {
     private Movies moviesFromList;
     ListView listview;
-    
+    private String id;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upcoming_movies);
-        listview = findViewById(R.id.lstUpcomingMovies);
-        getUpcomingMoviesList();
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
-                Intent intent = new Intent(UpcomingMovies.this, IndividualMovie.class);
-                intent.putExtra("id", moviesFromList.getMovieList().get(position).getIdMovie());
-                startActivity(intent);
-
-            }
-        });;
+        setContentView(R.layout.activity_related_movies);
+        Intent intent = getIntent();
+        id = intent.getStringExtra("id");
+        listview = findViewById(R.id.lstRelatedMovies);
+        getRelatedMoviesList(id);
     }
 
-    private void getUpcomingMoviesList() {
-        Call<Movies> call = RetrofitClient.getInstance().getMyApi().getUpcomingMovies();
+    private void getRelatedMoviesList(String id) {
+        Call<Movies> call = RetrofitClient.getInstance().getMyApi().getSimilarMovies(id);
         call.enqueue(new Callback<Movies>() {
             @Override
             public void onResponse(Call<Movies> call, Response<Movies> response) {
                 moviesFromList = response.body();
-                MovieAdapter adapterMovie = new MovieAdapter(UpcomingMovies.this, moviesFromList);
+                MovieAdapter adapterMovie = new MovieAdapter(RelatedMovies.this, moviesFromList);
                 listview.setAdapter(adapterMovie);
             }
 
             @Override
             public void onFailure(Call<Movies> call, Throwable t) {
-                Toast.makeText(UpcomingMovies.this, "Hubo un error. No se puede mostrar la lista.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RelatedMovies.this, "Hubo un error. No se puede mostrar la lista.", Toast.LENGTH_SHORT).show();
             }
         });
     }

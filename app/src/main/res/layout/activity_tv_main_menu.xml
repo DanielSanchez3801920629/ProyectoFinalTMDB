@@ -16,6 +16,7 @@
         android:fontFamily="@font/audiowide"
         android:onClick="onClick"
         android:text="Populares"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
@@ -26,14 +27,14 @@
         android:id="@+id/ultimoTvBtn"
         android:layout_width="374dp"
         android:layout_height="133dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/teal_200"
         android:fontFamily="@font/audiowide"
         android:onClick="onClick"
         android:text="Lo Último"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pupularTvBtn" />
 
@@ -41,14 +42,14 @@
         android:id="@+id/mejorTvBtn"
         android:layout_width="374dp"
         android:layout_height="133dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="@color/design_default_color_error"
         android:fontFamily="@font/audiowide"
         android:onClick="onClick"
         android:text="Lo Mejor"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ultimoTvBtn" />
 
@@ -66,5 +67,5 @@
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mejorTvBtn"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintVertical_bias="0.259" />
 </androidx.constraintlayout.widget.ConstraintLayout>

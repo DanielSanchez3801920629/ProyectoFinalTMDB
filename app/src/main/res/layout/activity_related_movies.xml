@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MoviesMenus.NowPlayingMovies">
+    tools:context=".MoviesMenus.RelatedMovies">
 
     <ListView
-        android:id="@+id/lstNowPlayingMovies"
+        android:id="@+id/lstRelatedMovies"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:background="@drawable/movie_back"

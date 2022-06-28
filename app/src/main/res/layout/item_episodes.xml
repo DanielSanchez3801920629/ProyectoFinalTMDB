@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgEpisodeStill"
+        android:layout_width="161dp"
+        android:layout_height="355dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtOverviewEpisode"
+        android:layout_width="202dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Resumen"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        app:layout_constraintEnd_toStartOf="@+id/imgEpisodeStill"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAirDateEpisode" />
+
+    <TextView
+        android:id="@+id/txtEpisodeName"
+        android:layout_width="198dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Nombre"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/imgEpisodeStill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAirDateEpisode"
+        android:layout_width="195dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Fecha"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        app:layout_constraintEnd_toStartOf="@+id/imgEpisodeStill"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEpisodeName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

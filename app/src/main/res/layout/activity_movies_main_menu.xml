@@ -26,13 +26,14 @@
         android:id="@+id/ultimoBtn"
         android:layout_width="374dp"
         android:layout_height="133dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/teal_200"
         android:fontFamily="@font/audiowide"
         android:onClick="onClick"
         android:text="Lo Último"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/popularBtn" />
 
@@ -40,14 +41,14 @@
         android:id="@+id/mejorBtn"
         android:layout_width="374dp"
         android:layout_height="133dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/design_default_color_error"
         android:fontFamily="@font/audiowide"
         android:onClick="onClick"
         android:text="Lo Mejor"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ultimoBtn" />
 
@@ -60,11 +61,12 @@
         android:fontFamily="@font/audiowide"
         android:onClick="onClick"
         android:text="Proximamente"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mejorBtn"
-        app:layout_constraintVertical_bias="0.254" />
+        app:layout_constraintVertical_bias="0.058" />
 </androidx.constraintlayout.widget.ConstraintLayout>
